@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:indeterminateOnly="false"
+        android:progress="20"
+        android:progressDrawable="@drawable/progress_circle2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nanumbarunpen"
+        android:text="0%"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:id="@+id/light"/>
+
+    <TextView
+        android:layout_width="323dp"
+        android:layout_height="66dp"
+        android:layout_above="@+id/progress2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/nanumbarunpenbold"
+        android:text="밝기를 조절해 주세요."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true">
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#800000"
+            android:text="커튼열기"
+            android:textSize="24dp"
+            android:fontFamily="@font/nanumbarunpenbold"
+            android:textColor="@color/white"
+            android:onClick="open"
+            />
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#800000"
+            android:text="커튼닫기"
+            android:textSize="24dp"
+            android:fontFamily="@font/nanumbarunpenbold"
+            android:textColor="@color/white"
+            android:onClick="close"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

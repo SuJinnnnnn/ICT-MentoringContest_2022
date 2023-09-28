@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu1"
+            android:icon="@drawable/home_icon"
+            android:title="홈" />
+        <item
+            android:id="@+id/menu2"
+            android:icon="@drawable/temperature"
+            android:title="온도" />
+        <item
+            android:id="@+id/menu4"
+            android:icon="@drawable/sunny"
+            android:title="밝기" />
+        <item
+            android:id="@+id/menu5"
+            android:icon="@drawable/food"
+            android:title="먹이" />
+        <item
+            android:id="@+id/menu6"
+            android:icon="@drawable/camera_icon"
+            android:title="관찰" />
+        <item
+            android:id="@+id/menu7"
+            android:icon="@drawable/calendar_icon"
+            android:title="캘린더" />
+    </group>
+</menu>
